@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/edit.css" />
+    <title>Edit</title>
+  </head>
+  <body>
+    <header>
+      <!-- TODO: agregar el header -->
+    </header>
+
+    <main>
+      <h2>EDITAR ITEM</h2>
+
+      <form action="">
+        <div>
+          <label for="categoria">Categoría</label>
+          <select name="categoria" id="categoria">
+            <option value=""></option>
+            <option value="FIG">Figuras</option>
+            <option value="STK">Stickers</option>
+            <!--TODO: Borrar, no forma parte de los requisitos, se harcodea para simular-->
+          </select>
+
+          <label for="licencia">Categoría</label>
+          <select name="licencia" id="licencia">
+            <option value=""></option>
+            <option value="NAR">Naruto Shipudden</option>
+            <option value="STK">Stickers</option>
+            <!--TODO: Borrar, no forma parte de los requisitos, se harcodea para simular-->
+          </select>
+        </div>
+
+        <div class="nombre-producto">
+          <label for="nombre-producto">Nombre del producto:</label>
+          <input
+            type="text"
+            name="nombre-producto"
+            id="nombre-producto"
+            placeholder="Kakashi Hatake Shippuden Saga"
+          />
+        </div>
+
+        <div>
+          <textarea
+            name="descripcion-producto"
+            id=""
+            cols="70"
+            rows="10"
+            placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="sku">SKU:</label>
+          <input type="text" name="sku" id="sku" placeholder="NAR001012" />
+
+          <label for="precio">Precio:</label>
+          <input
+            type="text"
+            name="precio"
+            id="precio"
+            placeholder="$ 1.799,00"
+          />
+
+          <label for="stock">Stock:</label>
+          <input type="number" name="stock" id="stock" placeholder="10" />
+        </div>
+        <label for="descuento">Descuento:</label>
+        <input
+          type="number"
+          name="descuento"
+          id="descuento"
+          placeholder="10%"
+        />
+
+        <label for="cuotas">Cuotas:</label>
+        <select name="cuotas" id="cuotas">
+          <option value=""></option>
+          <option value="3-s-i">3 Cuotas sin interés</option>
+          <option value="6-s-i">6 Cuotas sin interés</option>
+          <option value="9-s-i">9 Cuotas sin interés</option>
+          <option value="ahora-12">Ahora 12</option>
+          <option value="ahora-18">Ahora 18</option>
+        </select>
+
+        <div>
+          <label for="imagenes">Imágenes:</label>
+          <input type="file" name="imagenes" id="imagenes" />
+        </div>
+      </form>
+
+      <div class="photos">
+        <img
+          src="assets/kakashi_hatake_front.png"
+          alt="Imagen Kakashi frente"
+        />
+        <img src="assets/kakashi_hatake_back.png" alt="Imagen Kakashi Box" />
+      </div>
+      <!-- TODO: Escribir debajo de las imágenes de las figuras el texto que falta-->
+      <div><span>Frente</span><span>Dorso</span></div>
+      <button>MODIFICAR PRODUCTO</button>
+    </main>
+
+    <footer>
+      <!-- TODO: agregar el footer -->
+    </footer>
+  </body>
+</html>
