@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+    </head>
+    <body>
+        <header>
+            <img src="./Images/branding/logo_light_horizontal.svg" alt>
+
+            <ul>
+                <li>
+                    <a href>SHOP</a>
+                </li>
+                <li>
+                    <a href>CONTACTO</a>
+                </li>
+                <li>
+                    <a href>LOGIN</a>
+                </li>
+                <li>
+                    <img src alt>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <h2>CREAR NUEVO ITEM</h2>
+
+            <form action method="post">
+                <div>
+                    <label for="Categorías">Categorías </label>
+                    <select name="Categorías" id="Categorías">
+                        <option value></option>
+                        <option value="HARRY POTTER">HARRY POTTER</option>
+                        <option value="STARWARS">STARWARS</option>
+                        <option value="POKEMON">POKEMON</option>
+                    </select>
+
+                    <label for="Licencia">Licencia</label>
+                    <select name="Licencia" id="Licencia">
+                        <option value></option>
+                    </select>
+                </div>
+
+                <div>
+
+                    <label for="Nombre del producto">Nombre del producto</label>
+                    <input type="text" name="Nombre del producto"
+                        id="Nombre del producto">
+                </div>
+
+                <div>
+                    <textarea name="Descripción del producto"
+                        id="Descripción del producto" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+
+                    <label for="SKU">SKU</label>
+                    <input type="text" name="SKU" id="SKU">
+
+                    <label for="Precio">Precio</label>
+                    <input type="number" name="Precio" id="Precio">
+
+                    <label for="Stock">Stock</label>
+                    <input type="number" name="Stock" id="Stock">
+                </div>
+
+                <div>
+
+                    <label for="Descuento">Descuento</label>
+                    <input type="number" name="Descuento" id="Descuento">
+
+                    <label for="Cuotas">Cuotas</label>
+                    <select name="Cuotas" id="cuotas">
+                        <option value></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Imágenes:">Imágenes:</label>
+                    <input type="file" name="Imágenes:" id="Imágenes:">
+
+                </div>
+                <div>
+                    <button>Agregar Producto</button>
+
+                    <button>Limpiar</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <footer>
+            <ul>
+                <li>SHOP</li>
+                <li>REGISTRARSE</li>
+                <li>INGRESAR</li>
+                <li>CONTACTO</li>
+            </ul>
+            <img src="./Images/branding/isotype.svg" alt>
+            <p>All rights reserved 2023 - Funkoshop & copy</p>
+        </footer>
+    </body>
+</html>
